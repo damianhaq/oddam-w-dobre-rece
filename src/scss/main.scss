@@ -1,2 +1,11 @@
+@import "./settings/colors";
+@import "/src/scss/settings/fonts";
+
 @import "/src/scss/reset.css";
 @import "/src/scss/homeHeader";
+@import "/src/scss/homeThreeColumns";
+@import "/src/scss/fourSteps.scss";
+
+:root {
+  font-family: $font-base;
+}

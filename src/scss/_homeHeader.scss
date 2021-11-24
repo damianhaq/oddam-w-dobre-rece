@@ -1,7 +1,89 @@
 .HomeHeader {
-  .test {
+  display: flex;
+  height: 963px;
+  .img {
+    width: 50%;
+    // background-size: contain;
+    background-position: right;
     background-image: url("../assets/Home-Hero-Image.jpg");
-    width: 100px;
-    height: 100px;
+  }
+  .content {
+    width: 50%;
+    padding-right: 142px;
+    nav {
+      padding-top: 37px;
+      .account {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        .link {
+          border: 1px solid white;
+          color: $color-4;
+          text-decoration: none;
+          margin-left: 30px;
+          font-size: 14px;
+          padding: 10px;
+          &:hover {
+            border: 1px solid $color-3;
+          }
+        }
+      }
+      .navigation {
+        display: flex;
+        justify-content: flex-end;
+        .link {
+          border: 1px solid white;
+          margin-left: 15px;
+          padding: 9px 20px;
+          text-decoration: none;
+          color: $color-5;
+          font-size: 18px;
+          &:first-child {
+            border: 1px solid $color-5;
+          }
+          &:hover {
+            border: 1px solid $color-5;
+          }
+        }
+      }
+    }
+    section {
+      height: auto;
+      h2 {
+        text-align: center;
+        font-size: 38px;
+        color: $color-5;
+        &:first-child {
+          padding-top: 240px;
+          position: relative;
+          &::after {
+            bottom: -100px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+            content: url("../assets/Decoration.svg");
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 44px;
+        .link {
+          font-weight: 300;
+          color: $color-5;
+          margin-top: 123px;
+          height: 120px;
+          width: 310px;
+          font-size: 36px;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $color-5;
+          text-align: center;
+        }
+      }
+    }
   }
 }

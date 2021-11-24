@@ -1,0 +1,27 @@
+.HomeThreeColumns {
+  height: 384px;
+  display: flex;
+  justify-content: space-evenly;
+  article {
+    gap: 30px;
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    h2 {
+      font-size: 90px;
+      color: $color-2;
+    }
+    h3 {
+      font-size: 18px;
+      color: $color-5;
+    }
+    p {
+      font-family: $font-alt;
+      font-size: 16px;
+      color: $color-5;
+      font-weight: 300;
+    }
+  }
+}
