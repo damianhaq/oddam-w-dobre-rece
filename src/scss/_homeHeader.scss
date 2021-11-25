@@ -1,6 +1,6 @@
 .HomeHeader {
   display: flex;
-  height: 963px;
+  // height: 963px;
   .img {
     width: 50%;
     // background-size: contain;
@@ -8,8 +8,9 @@
     background-image: url("../assets/Home-Hero-Image.jpg");
   }
   .content {
+    padding-bottom: 200px;
     width: 50%;
-    padding-right: 142px;
+    padding-right: 8%;
     nav {
       padding-top: 37px;
       .account {
@@ -30,11 +31,15 @@
       }
       .navigation {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
         .link {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
           border: 1px solid white;
           margin-left: 15px;
-          padding: 9px 20px;
+          padding: 0 10px;
+          height: 42px;
           text-decoration: none;
           color: $color-5;
           font-size: 18px;
@@ -55,9 +60,11 @@
         color: $color-5;
         &:first-child {
           padding-top: 240px;
+        }
+        &:nth-child(2) {
           position: relative;
           &::after {
-            bottom: -100px;
+            bottom: -60px;
             left: 50%;
             transform: translate(-50%);
             position: absolute;
@@ -66,13 +73,15 @@
         }
       }
       .buttons {
+        padding-top: 123px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 44px;
         .link {
           font-weight: 300;
           color: $color-5;
-          margin-top: 123px;
+          padding: 5px;
           height: 120px;
           width: 310px;
           font-size: 36px;

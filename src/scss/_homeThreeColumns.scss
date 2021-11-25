@@ -1,7 +1,11 @@
 .HomeThreeColumns {
-  height: 384px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+  // height: 384px;
   display: flex;
   justify-content: space-evenly;
+  background-image: url("../assets/3\ Columns\ Background.png");
   article {
     gap: 30px;
     width: 334px;
