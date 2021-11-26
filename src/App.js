@@ -6,9 +6,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <div className="App">
-          <p>hello world</p>
-        </div> */}
       </Routes>
     </BrowserRouter>
   );
