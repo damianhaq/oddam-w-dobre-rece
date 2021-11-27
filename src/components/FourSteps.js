@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function FourSteps() {
   return (
-    <div className="FourSteps">
+    <div name="fourSteps" className="FourSteps">
       <h2>Wystarczą 4 proste kroki</h2>
       <article>
         <div className="column">

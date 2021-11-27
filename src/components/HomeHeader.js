@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import * as Scroll from "react-scroll";
-
-let Scroller = Scroll.Link;
+import { Link as Scroller } from "react-scroll";
 
 export default function HomeHeader() {
   return (
@@ -22,16 +20,16 @@ export default function HomeHeader() {
             <Scroller className="link" to="">
               Start
             </Scroller>
-            <Scroller className="link" activeClass="active" spy={true} smooth={true} duration={1000} to="fourSteps">
+            <Scroller className="link" smooth={true} to="fourSteps">
               O co chodzi?
             </Scroller>
-            <Scroller className="link" to="">
+            <Scroller className="link" smooth={true} to="AboutUs">
               O nas
             </Scroller>
-            <Scroller className="link" to="">
+            <Scroller className="link" smooth={true} to="help">
               Fundacja i organizacje
             </Scroller>
-            <Scroller className="link" to="">
+            <Scroller className="link" smooth={true} to="contact">
               Kontakt
             </Scroller>
           </div>
