@@ -5,7 +5,8 @@ export default function Footer() {
     <div className="footer">
       <p>Copyright by Coders Lab</p>
       <div className="icons">
-        <button></button>
+        <a onClick={(ev) => ev.preventDefault()} href=""></a>
+        <a onClick={(ev) => ev.preventDefault()} href=""></a>
       </div>
     </div>
   );

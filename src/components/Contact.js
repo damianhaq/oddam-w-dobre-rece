@@ -9,6 +9,10 @@ export default function Contact() {
       <div className="img">
         <form action="">
           <h2>Skontaktuj się z nami</h2>
+          <p className="message">
+            wiadomośćzostała wysłana. <br />
+            wktótce sie skontaktujemy
+          </p>
           <div className="wrapper">
             <div className="wrapper__in">
               <label htmlFor="name">Wpisz swoje imię</label>

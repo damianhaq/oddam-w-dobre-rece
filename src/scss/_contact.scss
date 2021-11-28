@@ -5,24 +5,31 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../assets/Background-Contact-Form.jpg");
+    // background-image: url("../assets/Background-Contact-Form.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/Background-Contact-Form.jpg");
     form {
       padding-top: 100px;
       padding-bottom: 200px;
+      padding-right: 80px;
       display: flex;
       flex-direction: column;
       h2 {
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         font-size: 38px;
         position: relative;
         &::after {
           position: absolute;
-          bottom: -60px;
+          bottom: -50px;
           left: 50%;
           transform: translate(-50%);
           content: url("../assets/Decoration.svg");
         }
+      }
+      .message {
+        // display: none;
+        text-align: center;
+        height: 40px;
       }
       .wrapper {
         display: flex;

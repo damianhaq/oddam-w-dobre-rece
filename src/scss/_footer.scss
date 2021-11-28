@@ -2,25 +2,30 @@
   // position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 30px;
+  padding-right: 80px;
   p {
-    text-align: right;
-    padding-right: 35%;
-    position: relative;
-    // &::after {
-    //   position: absolute;
-    //   top: -5px;
-    //   right: 0;
-    //   content: url("../assets/Facebook.svg");
-    // }
+    // text-align: right;
+    // position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
   }
   .icons {
-    // position: absolute;
-    // right: 0;
-    // .FB {
-    //   height: 100%;
-    //   background-image: ;
-    // }
+    // margin-left: auto;
+    // justify-self: flex-end;
+    a:first-child {
+      display: inline-block;
+      background-image: url("../assets/Facebook.svg");
+      height: 30px;
+      width: 30px;
+    }
+    a:last-child {
+      display: inline-block;
+      background-image: url("../assets/Instagram.svg");
+      height: 30px;
+      width: 30px;
+      margin-left: 20px;
+    }
   }
 }
