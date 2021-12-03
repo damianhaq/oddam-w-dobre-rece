@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-const errorEmail = document.querySelector("#errorEmail");
-const errorName = document.querySelector("#errorName");
-const errorMessage = document.querySelector("#errorMessage");
 
 export default function Contact() {
+  const errorEmail = document.querySelector("#errorEmail");
+  const errorName = document.querySelector("#errorName");
+  const errorMessage = document.querySelector("#errorMessage");
+  const success = document.querySelector("#success");
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -38,17 +40,18 @@ export default function Contact() {
             errorMessage.innerText = el.msg;
           }
         });
+      } else if (content.status === "success") {
+        success.innerText = "Wiadomość została wysłana wktótce sie skontaktujemy";
       }
-      // console.log(content);
     })();
   }
-
+  // Wiadomość została wysłana wktótce sie skontaktujemy
   return (
     <div to="contact" className="contact">
       <div className="img">
         <form action="">
           <h2>Skontaktuj się z nami</h2>
-          <p className="message"></p>
+          <p id="success" className="message"></p>
           <div className="wrapper">
             <div className="wrapper__in">
               <label htmlFor="name">Wpisz swoje imię</label>

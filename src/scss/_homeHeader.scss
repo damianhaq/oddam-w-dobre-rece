@@ -6,11 +6,12 @@
     // background-size: contain;
     background-position: right;
     background-image: url("../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
   }
   .content {
     padding-bottom: 200px;
     width: 50%;
-    padding-right: 8%;
+    // padding-right: 8%;
     nav {
       padding-top: 37px;
       .account {
