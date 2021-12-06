@@ -1,59 +1,15 @@
 .HomeHeader {
   display: flex;
-  // height: 963px;
   .img {
     width: 50%;
-    // background-size: contain;
     background-position: right;
     background-image: url("../assets/Home-Hero-Image.jpg");
     background-repeat: no-repeat;
   }
   .content {
     padding-bottom: 200px;
-    width: 50%;
-    // padding-right: 8%;
-    nav {
-      padding-top: 37px;
-      .account {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 10px;
-        .link {
-          border: 1px solid white;
-          color: $color-4;
-          text-decoration: none;
-          margin-left: 30px;
-          font-size: 14px;
-          padding: 10px;
-          &:hover {
-            border: 1px solid $color-3;
-          }
-        }
-      }
-      .navigation {
-        display: flex;
-        justify-content: space-around;
-        .link {
-          cursor: pointer;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid white;
-          margin-left: 15px;
-          padding: 0 10px;
-          height: 42px;
-          text-decoration: none;
-          color: $color-5;
-          font-size: 18px;
-          &:first-child {
-            border: 1px solid $color-5;
-          }
-          &:hover {
-            border: 1px solid $color-5;
-          }
-        }
-      }
-    }
+    // width: 50%;
+
     section {
       height: auto;
       h2 {
@@ -85,7 +41,7 @@
           color: $color-5;
           padding: 5px;
           height: 120px;
-          width: 310px;
+          // width: 310px;
           font-size: 36px;
           text-decoration: none;
           display: flex;
@@ -94,6 +50,58 @@
           border: 1px solid $color-5;
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+.nav {
+  // margin-left: auto;
+  // width: 50%;
+  // margin-left: auto;
+  padding-top: 37px;
+  .account {
+    // display: inline-block;
+    // margin-left: auto;
+    // display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: end;
+    margin-bottom: 5px;
+    .link {
+      border: 1px solid white;
+      color: $color-4;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+      padding: 10px;
+      &:hover {
+        border: 1px solid $color-3;
+      }
+    }
+  }
+  .navigation {
+    // margin-left: auto;
+    // display: flex;
+    justify-content: space-around;
+    text-align: end;
+    .link {
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      margin-left: 15px;
+      padding: 0 10px;
+      height: 42px;
+      text-decoration: none;
+      color: $color-5;
+      font-size: 18px;
+      &:first-child {
+        border: 1px solid $color-5;
+      }
+      &:hover {
+        border: 1px solid $color-5;
       }
     }
   }
