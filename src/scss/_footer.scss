@@ -1,19 +1,14 @@
 .footer {
-  // position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 30px;
   padding-right: 80px;
   p {
-    // text-align: right;
-    // position: relative;
     margin-left: 50%;
     transform: translate(-50%);
   }
   .icons {
-    // margin-left: auto;
-    // justify-self: flex-end;
     a:first-child {
       display: inline-block;
       background-image: url("../assets/Facebook.svg");

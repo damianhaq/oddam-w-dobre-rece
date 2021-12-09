@@ -5,7 +5,6 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-image: url("../assets/Background-Contact-Form.jpg");
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/Background-Contact-Form.jpg");
     form {
       padding-top: 100px;
@@ -27,7 +26,6 @@
         }
       }
       .message {
-        // display: none;
         text-align: center;
         height: 40px;
         font-weight: 600;
@@ -72,11 +70,5 @@
         color: red;
       }
     }
-  }
-
-  @media (max-width: 1000px) {
-    // width: 100%;
-    // height: 0;
-    // padding-bottom: 71.9%;
   }
 }

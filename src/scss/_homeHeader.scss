@@ -40,8 +40,6 @@
           font-weight: 300;
           color: $color-5;
           padding: 40px;
-          // height: 120px;
-          // width: 310px;
           font-size: 36px;
           text-decoration: none;
           display: flex;
@@ -56,14 +54,8 @@
 }
 
 .nav {
-  // margin-left: auto;
-  // width: 50%;
-  // margin-left: auto;
   padding-top: 37px;
   .account {
-    // display: inline-block;
-    // margin-left: auto;
-    // display: flex;
     justify-content: flex-end;
     padding-right: 10px;
     text-align: end;
@@ -81,8 +73,6 @@
     }
   }
   .navigation {
-    // margin-left: auto;
-    // display: flex;
     justify-content: space-around;
     text-align: end;
     .link {

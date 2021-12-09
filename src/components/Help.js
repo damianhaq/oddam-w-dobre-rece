@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Fundations from "./Fundations";
 import Organizations from "./Organizations";
 import Local from "./Local";
@@ -6,18 +6,9 @@ import { local, organizations, fundations } from "./api";
 
 export default function Help() {
   const [show, setShow] = useState(1);
-  // let style = { borderColor: "white" };
-
-  // const button1 = document.querySelector("#root > div > div.help > nav > a:nth-child(1)");
-  // const button2 = document.querySelector("#root > div > div.help > nav > a:nth-child(2)");
-  // const button3 = document.querySelector("#root > div > div.help > nav > a:nth-child(3)");
 
   function handleShow(numb, ev) {
     ev.preventDefault();
-    // button1.style.borderColor = "white";
-    // button2.style.borderColor = "white";
-    // button3.style.borderColor = "white";
-    // document.activeElement.style.borderColor = "#3c3c3c";
     setShow(numb);
   }
 
@@ -25,13 +16,13 @@ export default function Help() {
     <div to="help" className="help">
       <h2>Komu pomagamy?</h2>
       <nav>
-        <a href="" onClick={(ev) => handleShow(1, ev)}>
+        <a href="#" onClick={(ev) => handleShow(1, ev)}>
           Fundacjom
         </a>
-        <a href="" onClick={(ev) => handleShow(2, ev)}>
+        <a href="#" onClick={(ev) => handleShow(2, ev)}>
           Organizacjom pozarządowym
         </a>
-        <a href="" onClick={(ev) => handleShow(3, ev)}>
+        <a href="#" onClick={(ev) => handleShow(3, ev)}>
           Lokalnym zbiórkom
         </a>
       </nav>

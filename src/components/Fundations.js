@@ -8,21 +8,19 @@ export default function Fundations({ fundations, itemsPerPage }) {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setCurrentItems(fundations.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(fundations.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage]);
+  }, [itemOffset, itemsPerPage, fundations]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % fundations.length;
-    console.log(`User requested page number ${event.selected}, which is offset ${newOffset}`);
     setItemOffset(newOffset);
   };
   return (
     <div className="element">
       {currentItems &&
-        currentItems.map((el) => (
-          <div className="element2">
+        currentItems.map((el, index) => (
+          <div key={index} className="element2">
             <div className="wrapper">
               <p>{el.title}</p>
               <p>{el.text}</p>
