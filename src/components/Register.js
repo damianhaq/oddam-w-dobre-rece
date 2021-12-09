@@ -48,7 +48,7 @@ export default function Register() {
           <label htmlFor="password">Hasło</label>
           <input onChange={(ev) => setPassword(ev.target.value)} value={password} type="password" name="password" id="password" />
           <label htmlFor="password">Powtórz hasło</label>
-          <input onChange={(ev) => setPasswordConf(ev.target.value)} value={passwordConf} type="password" name="password" id="password" />
+          <input onChange={(ev) => setPasswordConf(ev.target.value)} value={passwordConf} type="password" name="password" />
           <p id="errorPasswordReg" className="error"></p>
         </div>
         <div className="buttonsWrapper">

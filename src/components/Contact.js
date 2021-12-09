@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
 export default function Contact() {
-  const errorEmail = document.querySelector("#errorEmail");
-  const errorName = document.querySelector("#errorName");
-  const errorMessage = document.querySelector("#errorMessage");
-  const success = document.querySelector("#success");
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -14,6 +9,10 @@ export default function Contact() {
     ev.preventDefault();
 
     (async () => {
+      const errorEmail = document.querySelector("#errorEmail");
+      const errorName = document.querySelector("#errorName");
+      const errorMessage = document.querySelector("#errorMessage");
+      const success = document.querySelector("#success");
       const rawResponse = await fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
         method: "POST",
         headers: {
@@ -24,24 +23,26 @@ export default function Contact() {
       });
       const content = await rawResponse.json();
 
+      errorEmail.innerText = "";
+      errorMessage.innerText = "";
+      errorName.innerText = "";
       if (content.status === "error") {
-        console.log("errors:", content.errors);
         content.errors.forEach((el) => {
           if (el.param === "name") {
-            console.log(el.msg);
             errorName.innerText = el.msg;
           }
           if (el.param === "email") {
-            console.log(el.msg);
             errorEmail.innerText = el.msg;
           }
           if (el.param === "message") {
-            console.log(el.msg);
             errorMessage.innerText = el.msg;
           }
         });
       } else if (content.status === "success") {
         success.innerText = "Wiadomość została wysłana wktótce sie skontaktujemy";
+        errorName.innerText = "";
+        errorEmail.innerText = "";
+        errorMessage.innerText = "";
       }
     })();
   }
@@ -56,7 +57,9 @@ export default function Contact() {
             <div className="wrapper__in">
               <label htmlFor="name">Wpisz swoje imię</label>
               <input value={name} onChange={(ev) => setName(ev.target.value)} placeholder="Krzysztof" type="text" name="name" id="name" />
-              <p id="errorName" className="error"></p>
+              <p id="errorName" className="error">
+                {" "}
+              </p>
             </div>
             <div className="wrapper__in">
               <label htmlFor="email">Wpisz swój email</label>
