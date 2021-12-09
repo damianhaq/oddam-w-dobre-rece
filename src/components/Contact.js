@@ -45,7 +45,7 @@ export default function Contact() {
       }
     })();
   }
-  // Wiadomość została wysłana wktótce sie skontaktujemy
+
   return (
     <div to="contact" className="contact">
       <div className="img">
